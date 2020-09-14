@@ -1,0 +1,484 @@
+
+/* fonts */
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Anton);
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+
+/* Styling for all pages */
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+#pageContainer{
+  position: relative;
+  min-height: 100vh;
+}
+
+#contentWrap{
+  padding-bottom: 2.5rem;
+}
+
+/* Header Styling */
+
+header{
+  background-color: ;
+  /* box-shadow: 5px 0px 5px grey; */
+  font-family: Lato;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  position: fixed;
+  top: 0px;
+  text-align: center;
+  transition: .3s;
+  width: 100%;
+  z-index: 3;
+}
+
+.headerDiv{
+  display: flex;
+  margin: 0px 45px;
+}
+
+.headerFlex{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 78px;
+  justify-content: flex-end;
+  width: 100%;
+  z-index: 2;
+}
+
+.flexItemParent{
+  text-decoration: none;
+  height: auto;
+  margin: 0px 15px;
+  width: auto;
+}
+
+.headerFlexItem{
+  color: #001500;
+  height: 100%;
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 17px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: auto;
+}
+
+.sticky{
+  background-color: white;
+  box-shadow: 5px 0px 5px grey;
+  opacity: .9;
+  position: fixed;
+  top: 0;
+  transition: .5s;
+  width: 100%;
+}
+
+
+/* Main.html Styling */
+
+/* Featured Section Styling */
+
+.mainTopFlex{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 500px;
+  justify-content: center;
+  margin: 50px 15px;
+  width: 100%;
+}
+
+.mainTopFlexChild{
+  height: 100%;
+  padding: 30px;
+  width: 50%;
+}
+
+#featuredImage{
+  background-image: url("./images/placeholderEyeglasses.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#featuredTextFlex{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.featuredTextChild{
+  height: 33%;
+  width: 100%;
+}
+
+#featuredTextHeading{
+  font-family: Montserrat;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+#featuredTextBody{
+  font-family: Ubuntu;
+  font-size: 30px;
+}
+
+#eyeglassAndLocationFlex{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.featuredButtons{
+  font-family: Ubuntu;
+  font-size: 20px;
+  background-color: white;
+  border-color: #000023;
+  border-radius: .5;
+  box-shadow: none;
+  border-style: solid;
+  border-width: thick;
+  padding: 10px 13%;
+  text-shadow: none;
+  transition: .1s;
+}
+
+
+/* Bottom Half of Main Styling */
+
+.mainMidText{
+  align-items: center;
+  font-family: Ubuntu;
+  font-size: 25px;
+  justify-content: center;
+  margin: 125px 18%;
+  text-align: center;
+  width: auto;
+}
+
+.mainBottomFlex{
+  display: flex;
+  flex-direction: row;
+  margin: 50px 15px;
+}
+
+.mainBottomChildren{
+  margin: 25px;
+  width: 50%;
+}
+
+.ourStoryHeading{
+  font-family: Montserrat;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.ourStoryBody{
+  font-family: Ubuntu;
+  font-size: 18px;
+}
+
+#ourStoryImage{
+  background-image: url("./images/placeholderEyeglasses.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* Lenses HTML Styling */
+
+/* Showcase Heading Styling */
+
+.eyeglassHeaderContainer{
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 75px;
+  width: auto;
+}
+
+.eyeglassesHeader{
+  font-family: Montserrat;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.eyeglassesHeaderBody{
+  font-family: Ubuntu;
+  text-align: center;
+}
+
+/* Eyeglass Display */
+
+.showcaseFlexVertical{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#showcaseFlexHorizontal{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.showcaseFlexVerticalChild{
+
+}
+
+#showcaseFlexIndividual{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 25px 75px;
+  width: 33%;
+}
+
+.showcaseFlexHorizontalChild{
+
+}
+
+.showcaseFlexIndividualChild{
+
+}
+
+#showcaseImage{
+  background-image: url("./images/placeholderEyeglasses.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+}
+
+#showcaseHeading{
+  font-family: Montserrat;
+  text-align: center;
+}
+
+#showcaseBody{
+  font-family: Ubuntu;
+  text-align: center;
+}
+
+
+/* BRANDS AND ACCESSORIES SECTION STYLING */
+
+.brandsAndAccessoriesFlex{
+  background-color: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 75px 10px;
+}
+
+.brandsAndAccessoriesChild{
+  margin: 50px 75px;
+}
+
+  #brandsFlex{
+    display: flex;
+    flex-direction: row;
+}
+
+.brandsFlexChild{
+  margin: 10px;
+  width: 50%;
+}
+
+#brandsImage{
+  background-image: url("./images/placeholderEyeglasses.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100px;
+  margin: auto;
+  width: 250px;
+}
+
+#brandsTextFlex{
+  display: flex;
+  flex-direction: column;
+}
+
+.brandsTextChild{
+
+}
+
+#accessoriesFlex{
+  display: flex;
+  flex-direction: row;
+}
+
+.accessoriesFlexChild{
+  margin: 10px;
+  width: 50%;
+}
+
+#accessoriesTextFlex{
+  display: flex;
+  flex-direction: column;
+}
+
+.accessoriesTextChild{
+
+}
+
+#accessoriesImage{
+  background-image: url("./images/placeholderEyeglasses.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100px;
+  margin: auto;
+  width: 250px;
+}
+
+
+/* LOCATION PAGE STYLING */
+
+.locationWrapper{
+  margin-top: 75px;
+  text-align: center;
+  width: 100%;
+}
+
+.locationHeader{
+  font-family: Ubuntu;
+}
+
+.locationInfoFlex{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 55%;
+}
+
+.locationInfoChild{
+  width: 33%;
+}
+
+
+/* Footer Styling */
+
+footer{
+  background-color: #CCCCCC;
+  bottom: 0;
+  height: 2.5rem;
+  margin-top: 25px;
+  position: absolute;
+  width: 100%;
+}
+
+.footerFlex{
+  background-color: #CCCCCC;
+  color: #444455;
+  display: flex;
+  flex-direction: row;
+  font-family: Ubuntu;
+  width: 100%;
+}
+
+.footerFlexChild{
+  margin: 15px 25px;
+  width: auto;
+}
+
+#footerContactFlex{
+  display: flex;
+  flex-direction: column;
+}
+
+#footerContactHeader{
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#footerAddress{
+  text-transform: capitalize;
+}
+
+#footerEmailAndNumber{
+  letter-spacing: 1px;
+}
+
+#quickAccessFlex{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  justify-content: center;
+}
+
+.quickAccessChild{
+  height: auto;
+  margin: 10px 5px;
+  width: auto;
+}
+
+.quickAccessChild a{
+  color: #444455;
+  font-size: 19px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  transition: .5s;
+}
+
+#socialFlex{
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 25px;
+}
+
+.socialFlexChild{
+  color: #444455;
+  display: inline;
+  margin: 0px 10px;
+}
+
+.socialFlexChild a{
+  text-decoration: none;
+}
+
+.socialFlexChild h2{
+  text-decoration: none;
+}
+
+
+/* All Hover Styling */
+
+/* Featured Buttons Hover Styling */
+
+.featuredButtons:hover{
+  background-color: lightgrey;
+}
+
+/* Footer Hover Styling */
+
+.quickAccessChild a:hover{
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 1px black;
+}
