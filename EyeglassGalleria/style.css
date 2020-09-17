@@ -42,6 +42,17 @@ header{
   z-index: 3;
 }
 
+#logoImage{
+  height: 40px;
+  width: 175px;
+}
+
+.logoDiv{
+  display: inline;
+  font-size: 15px;
+  width: 300px;
+}
+
 .headerDiv{
   display: flex;
   margin: 0px 45px;
@@ -103,6 +114,24 @@ header{
   width: 100%;
 }
 
+.colorBox1{
+  background-color: #C8e6f0;
+  height: 500px;
+  left: 0;
+  position: absolute;
+  width: 67%;
+  z-index: -1;
+}
+
+.colorBox2{
+  background-color: #f1e2cd;
+  height: 500px;
+  position: absolute;
+  right: 0;
+  width: 67%;
+  z-index: -1;
+}
+
 .mainTopFlexChild{
   height: 100%;
   padding: 30px;
@@ -110,7 +139,7 @@ header{
 }
 
 #featuredImage{
-  background-image: url("./images/placeholderEyeglasses.jpg");
+  background-image: url("./images/model1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -147,15 +176,17 @@ header{
 }
 
 .featuredButtons{
-  font-family: Ubuntu;
-  font-size: 20px;
   background-color: white;
   border-color: #000023;
   border-radius: .5;
   box-shadow: none;
   border-style: solid;
   border-width: thick;
+  color: black;
+  font-family: Ubuntu;
+  font-size: 20px;
   padding: 10px 13%;
+  text-decoration: none;
   text-shadow: none;
   transition: .1s;
 }
@@ -168,7 +199,7 @@ header{
   font-family: Ubuntu;
   font-size: 25px;
   justify-content: center;
-  margin: 125px 18%;
+  margin: 125px 22%;
   text-align: center;
   width: auto;
 }
@@ -176,6 +207,7 @@ header{
 .mainBottomFlex{
   display: flex;
   flex-direction: row;
+  height: 350px;
   margin: 50px 15px;
 }
 
@@ -216,6 +248,7 @@ header{
 
 .eyeglassesHeader{
   font-family: Montserrat;
+  font-size: 40px;
   text-align: center;
   letter-spacing: 2px;
 }
@@ -262,17 +295,67 @@ header{
 
 }
 
-#showcaseImage{
-  background-image: url("./images/placeholderEyeglasses.jpg");
+/* SHOWCASE IMAGES */
+
+#showcaseImage1{
+  background-image: url("./images/glasses1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100px;
-  width: 100px;
+  width: 200px;
 }
+
+#showcaseImage2{
+  background-image: url("./images/glasses2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  width: 200px;
+}
+
+#showcaseImage3{
+  background-image: url("./images/glasses3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  width: 200px;
+}
+
+#showcaseImage4{
+  background-image: url("./images/glasses4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  width: 200px;
+}
+
+#showcaseImage5{
+  background-image: url("./images/glasses5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  width: 200px;
+}
+
+#showcaseImage6{
+  background-image: url("./images/glasses6.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  width: 200px;
+}
+
+
 
 #showcaseHeading{
   font-family: Montserrat;
+  font-size: 13px;
   text-align: center;
 }
 
@@ -307,7 +390,7 @@ header{
 }
 
 #brandsImage{
-  background-image: url("./images/placeholderEyeglasses.jpg");
+  /* background-image: url("./images/placeholderEyeglasses.jpg"); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -358,24 +441,104 @@ header{
 /* LOCATION PAGE STYLING */
 
 .locationWrapper{
-  margin-top: 75px;
   text-align: center;
   width: 100%;
 }
 
+/* .locationImageWrapper{
+  background-image: url("./images/miami2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
 .locationHeader{
   font-family: Ubuntu;
+  padding-top: 75px;
 }
 
 .locationInfoFlex{
   display: flex;
   flex-direction: row;
+  font-family: Montserrat;
   margin: auto;
   width: 55%;
 }
 
 .locationInfoChild{
   width: 33%;
+}
+
+/* LOCATIONS MAPS SECTION */
+
+.mapSectionDiv{
+
+}
+
+#googleMap{
+  height: 400px;
+  margin: 50px auto;
+  width: 100%;
+}
+
+.openInMaps{
+  margin: 10px auto;
+  text-align: center;
+}
+
+/* FORM STYLING */
+
+.formHeading{
+  font-family: Ubuntu;
+  text-align:;
+}
+
+.formContainer{
+  height: auto;
+  margin: 35px auto;
+  width: 60%;
+}
+
+.contactForm{
+
+}
+
+.names{
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0px;
+  width: 100%
+}
+
+#firstName{
+  align-self: flex-start;
+  margin-right: 5px;
+  width: 50%;
+}
+
+#lastName{
+  align-self: flex-end;
+  margin-left: 5px;
+  width: 50%
+}
+
+.names input{
+  padding: 15px;
+}
+
+#email{
+  margin: 10px;
+  width: 100%;
+}
+
+#phoneNumber{
+  margin: 10px;
+  width: 100%;
+}
+
+#subjectText{
+  margin: 10px;
+  width: 100%;
 }
 
 

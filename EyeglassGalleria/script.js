@@ -20,4 +20,8 @@ $(document).ready(function(){
       document.getElementById('header').style.top = '0';
     };
   };
+
+  // MAP function
+
+
 });
