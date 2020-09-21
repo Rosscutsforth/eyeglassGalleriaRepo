@@ -16,12 +16,15 @@ body{
 }
 
 #pageContainer{
+  padding: 0px;
   position: relative;
-  min-height: 100vh;
+  margin: 0px;
+  min-height: 80vh;
 }
 
 #contentWrap{
   padding-bottom: 2.5rem;
+  margin: 0px;
 }
 
 /* Header Styling */
@@ -111,24 +114,27 @@ header{
   height: 500px;
   justify-content: center;
   margin: 50px 15px;
+  padding: 60px 0px;
   width: 100%;
 }
 
 .colorBox1{
   background-color: #C8e6f0;
-  height: 500px;
+  height: 650px;
   left: 0;
+  padding: 60px 0px;
   position: absolute;
-  width: 67%;
+  width: 60%;
   z-index: -1;
 }
 
 .colorBox2{
   background-color: #f1e2cd;
-  height: 500px;
+  height: 650px;
+  padding: 60px 0px;
   position: absolute;
   right: 0;
-  width: 67%;
+  width: 60%;
   z-index: -1;
 }
 
@@ -204,6 +210,89 @@ header{
   width: auto;
 }
 
+/* Best Sellers Section */
+
+.bestSellersHeading{
+  font-family: Ubuntu;
+  letter-spacing: 2px;
+  margin: 35px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.bestSellersFlex{
+  display: flex;
+  flex-direction: row;
+}
+
+.bestSellersChild{
+  border-radius: 2%;
+  border-style: solid;
+  border-width: thin;
+  height: auto;
+  margin: 25px 35px;
+  transition: .1s;
+  width: 33%;
+}
+
+#bsChildFlex{
+  display: flex;
+  flex-direction: row;
+}
+
+.bsGrandchild{
+  height: auto;
+  width: 50%;
+}
+
+#bsImage1{
+  background-image: url("./images/glasses2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#bsImage2{
+  background-image: url("./images/glasses4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#bsImage3{
+  background-image: url("./images/glasses6.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#bsGrandchildFlex{
+  background-color: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+}
+
+.bsBaby{
+  height: auto;
+  margin: 10px;
+  width: auto;
+}
+
+#bsProductHeader{
+  font-family: Ubuntu;
+}
+
+#bsProductBody{
+  font-family: Montserrat;
+}
+
+#bsProductPrice{
+  font-family: sans-serif;
+}
+
+
+/* Main Bottom Flex */
+
 .mainBottomFlex{
   display: flex;
   flex-direction: row;
@@ -232,6 +321,32 @@ header{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* Visit Us MAIN Flex */
+
+.locationWrapperMain{
+  margin-bottom: 25px;
+  text-align: center;
+  width: 100%;
+}
+
+.locationHeaderMain{
+  font-family: Ubuntu;
+  font-weight: lighter;
+  padding-top: 75px;
+}
+
+.locationInfoFlexMain{
+  display: flex;
+  flex-direction: row;
+  font-family: Montserrat;
+  margin: auto;
+  width: 55%;
+}
+
+.locationInfoChildMain{
+  width: 50%;
 }
 
 
@@ -442,6 +557,7 @@ header{
 
 .locationWrapper{
   text-align: center;
+  margin: 75px 0px;
   width: 100%;
 }
 
@@ -454,7 +570,6 @@ header{
 
 .locationHeader{
   font-family: Ubuntu;
-  padding-top: 75px;
 }
 
 .locationInfoFlex{
@@ -472,12 +587,12 @@ header{
 /* LOCATIONS MAPS SECTION */
 
 .mapSectionDiv{
-
+  margin: 10px 0px;
 }
 
 #googleMap{
   height: 400px;
-  margin: 50px auto;
+  margin-bottom: 50px;
   width: 100%;
 }
 
@@ -486,27 +601,51 @@ header{
   text-align: center;
 }
 
-/* FORM STYLING */
+/* FORM AND IMAGE STYLING */
+
+.locationTopFlex{
+  display: flex;
+  flex-direction: row;
+}
+
+.locationTopFlexChild{
+  width: 50%;
+}
+
+#topFlexImage{
+  background-image: url("./images/glassesHeldUp.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 10px;
+  margin-top: 80px;
+  margin-right: 20px;
+}
 
 .formHeading{
   font-family: Ubuntu;
   text-align:;
 }
 
-.formContainer{
+#formContainer{
   height: auto;
-  margin: 35px auto;
+  margin-right: 20px;
+  margin-top: 80px;
   width: 60%;
 }
 
 .contactForm{
-
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .names{
   display: flex;
   flex-direction: row;
-  margin: 10px 0px;
+  justify-content: center;
+  margin: 10px auto;
+  padding: 0px;
   width: 100%
 }
 
@@ -519,26 +658,129 @@ header{
 #lastName{
   align-self: flex-end;
   margin-left: 5px;
-  width: 50%
+  width: 50%;
 }
 
 .names input{
   padding: 15px;
 }
 
-#email{
-  margin: 10px;
+input{
+  margin: 10px 5px;
+  padding: 15px;
+}
+
+textarea{
+  font-size: 15px;
+  margin: 10px 5px;
+  padding: 15px;
+}
+
+input[type=submit] {
+  align-self: flex-end;
+  background-color: black;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: 3px;
+  margin-top: 25px;
+  text-transform: uppercase;
+  transition: .2s;
+  width: 20%;
+}
+
+
+/* SERVICES STYLING */
+
+.servicesFlex{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  justify-content: center;
+  margin-top: 80px;
   width: 100%;
 }
 
-#phoneNumber{
-  margin: 10px;
-  width: 100%;
+.servicesFlexChild{
+  width: 33%;
 }
 
-#subjectText{
-  margin: 10px;
-  width: 100%;
+#sectionFlex{
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionFlexChild{
+  width: 100%
+}
+
+#sectionImage1{
+  background-image: url("./images/model1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  min-height: 100%;
+}
+
+#sectionImage2{
+  background-image: url("./images/fallingGlasses.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+#sectionImage3{
+  background-image: url("./images/miami2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+#sectionText1{
+  background-color: lightblue;
+  padding: 30px 0px;
+  text-align: center;
+}
+
+#sectionText2{
+  background-color: #EEDD77;
+  padding: 30px 0px;
+  text-align: center;
+}
+
+#sectionText3{
+  background-color: #FFEEEE;
+  padding: 30px 0px;
+  text-align: center;
+}
+
+.sectionHeader{
+  font-family: Ubuntu;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.sectionBody{
+  font-family: Montserrat;
+}
+
+/* Appointment Button */
+
+.bookAppointment{
+  margin: 50px;
+  text-align: center;
+}
+
+.bookAppointment button{
+  font-family: Ubuntu;
+  font-size: 25px;
+  padding: 15px 30px;
+  text-transform: uppercase;
 }
 
 
@@ -633,11 +875,34 @@ footer{
 
 /* All Hover Styling */
 
+/* Header Hover Styling */
+
+.headerFlexItem:hover{
+  color: #1761a0;
+  text-shadow: 2px 2px 6px #C8e6f0;
+}
+
 /* Featured Buttons Hover Styling */
 
 .featuredButtons:hover{
   background-color: lightgrey;
 }
+
+/* Best Sellers Hover Styling */
+
+.bestSellersChild:hover{
+  opacity: .75;
+}
+
+/* Contact Form Hover Styling */
+
+input[type=submit]:hover{
+  box-shadow: 0px 0px 5px lightgrey;
+  color: black;
+  background-color: white;
+  border-color: black;
+}
+
 
 /* Footer Hover Styling */
 

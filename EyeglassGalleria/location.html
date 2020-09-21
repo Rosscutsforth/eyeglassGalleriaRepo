@@ -34,41 +34,52 @@
             </div>
 
             <div class="flexItemParent">
-              <a href="location.html" class="headerFlexItem" id="location">about</a>
+              <a href="location.html" class="headerFlexItem" id="location">contact</a>
             </div>
 
             <div class="flexItemParent">
-              <a href="explore.html" class="headerFlexItem" id="explore">contact</a>
+              <a href="services.html" class="headerFlexItem" id="explore">services</a>
             </div>
           </div>
         </div>
 
       </header>
 
-      <!-- Location Text -->
+      <!-- FORM SECTION -->
+      <div class="locationTopFlex">
+        <div id="topFlexImage" class="locationTopFlexChild"></div>
 
-      <div class="locationWrapper">
-        <div class="locationImageWrapper">
-          <h1 class="locationHeader">Location</h1>
-        </div>
+        <div id="formContainer" class="locationTopFlexChild">
+          <h1 class="formHeading">Contact Us</h1>
 
-        <div class="locationInfoFlex">
-          <div class="locationInfoChild">
-            <h2>Call Us</h2>
-            <p>(123) 456-7899</p>
-          </div>
+          <form class="contactForm" name="contactForm" action="index.html" method="post">
+            <div class="names">
+              <label form="contactForm" for="firstName"></label>
+              <input form="contactForm" minlength="1" maxlength="50" required type="text"
+              id="firstName" name="firstName" placeholder="First Name" value="">
 
-          <div class="locationInfoChild">
-            <h2>Visit Us</h2>
-            <p>123 Main Street</br>Miami, FL 00000</p>
-          </div>
+              <label form="contactForm" for="lastName"></label>
+              <input form="contactForm" minlength="1" maxlength="50" required type="text"
+              id="lastName" name="lastName" placeholder="Last Name" value="">
+            </div>
 
-          <div class="locationInfoChild">
-            <h2>Hours of Operation</h2>
-            <p>Mon-Sat | 12am - 12pm</br>Sun | 12am - 9pm</p>
-          </div>
+            <label form="contactForm" for="email"></label>
+            <input form="contactForm" minlength="6" maxlength="50" required type="email"
+            id="email" name="email" placeholder="Email" value="">
+
+            <label form="contactForm" for="phoneNumber"></label>
+            <input id="phoneNumber" type="text" minlength="7" maxlength="15"
+            name="phoneNumber" placeholder="Phone Number" value="">
+
+            <label form="contactForm" for="subjectText"></label>
+            <textarea form="contactForm" minlength="5" maxlength="2000" required name="subjectText"
+            id="subjectText" placeholder="Tell us what we can help you with!" rows="10" cols="100"></textarea>
+
+            <input form="contactForm" type="submit" name="" value="Submit">
+          </form>
         </div>
       </div>
+
 
         <!-- MAP SECTION -->
 
@@ -103,34 +114,29 @@
         }
       </script>
 
-        <!-- FORM SECTION -->
+      <!-- Location Text -->
 
-      <div class="formContainer">
-        <h1 class="formHeading">Contact Us</h1>
+      <div class="locationWrapper">
+        <div class="locationImageWrapper">
+          <h1 class="locationHeader">Location</h1>
+        </div>
 
-        <form class="contactForm" name="contactForm" action="index.html" method="post">
-          <div class="names">
-            <label form="contactForm" for="firstName"></label>
-            <input form="contactForm" minlength="1" maxlength="50" required type="text"
-            id="firstName" name="firstName" placeholder="First Name" value="">
-
-            <label form="contactForm" for="lastName"></label>
-            <input form="contactForm" minlength="1" maxlength="50" required type="text"
-            id="lastName" name="lastName" placeholder="Last Name" value="">
+        <div class="locationInfoFlex">
+          <div class="locationInfoChild">
+            <h2>Call Us</h2>
+            <p>(123) 456-7899</p>
           </div>
 
-          <label form="contactForm" for="email"></label>
-          <input form="contactForm" minlength="6" maxlength="50" required type="email"
-          id="email" name="email" placeholder="Email" value="">
+          <div class="locationInfoChild">
+            <h2>Visit Us</h2>
+            <p>123 Main Street</br>Miami, FL 00000</p>
+          </div>
 
-          <label form="contactForm" for="phoneNumber"></label>
-          <input id="phoneNumber" type="text" minlength="7" maxlength="15"
-          name="phoneNumber" placeholder="Phone Number" value="">
-
-          <label form="contactForm" for="subjectText"></label>
-          <textarea form="contactForm" minlength="5" maxlength="2000" required name="subjectText"
-          id="subjectText" placeholder="Tell us what we can help you with!" rows="10" cols="100"></textarea>
-        </form>
+          <div class="locationInfoChild">
+            <h2>Hours of Operation</h2>
+            <p>Mon-Sat | 12am - 12pm</br>Sun | 12am - 9pm</p>
+          </div>
+        </div>
       </div>
 
 
@@ -168,8 +174,8 @@
         </div>
 
         <div id="socialFlex" class="footerFlexChild">
-          <div class="socialFlexChild"><a class="fa fa-linkedin fa-2x" href="#"></a></div>
-          <div class="socialFlexChild"><a class="fa fa-linkedin fa-2x" href="#"></a></div>
+          <div class="socialFlexChild"><a class="fa fa-instagram fa-2x" href="#"></a></div>
+          <div class="socialFlexChild"><a class="fa fa-facebook fa-2x" href="#"></a></div>
           <div class="socialFlexChild"><a class="fa fa-linkedin fa-2x" href="#"></a></div>
           <div class="socialFlexChild"><h2>Follow Us</a></div>
           </div>
