@@ -52,20 +52,20 @@
         <div id="formContainer" class="locationTopFlexChild">
           <h1 class="formHeading">Contact Us</h1>
 
-          <form class="contactForm" name="contactForm" action="index.html" method="post">
+          <form class="contactForm" name="contactForm" action="contact-form.php" method="post">
             <div class="names">
               <label form="contactForm" for="firstName"></label>
               <input form="contactForm" minlength="1" maxlength="50" required type="text"
-              id="firstName" name="firstName" placeholder="First Name" value="">
+              id="firstName" name="firstName" placeholder="First Name" value="" required>
 
               <label form="contactForm" for="lastName"></label>
               <input form="contactForm" minlength="1" maxlength="50" required type="text"
-              id="lastName" name="lastName" placeholder="Last Name" value="">
+              id="lastName" name="lastName" placeholder="Last Name" value="" required>
             </div>
 
             <label form="contactForm" for="email"></label>
             <input form="contactForm" minlength="6" maxlength="50" required type="email"
-            id="email" name="email" placeholder="Email" value="">
+            id="email" name="email" placeholder="Email" value="" required>
 
             <label form="contactForm" for="phoneNumber"></label>
             <input id="phoneNumber" type="text" minlength="7" maxlength="15"
@@ -73,7 +73,7 @@
 
             <label form="contactForm" for="subjectText"></label>
             <textarea form="contactForm" minlength="5" maxlength="2000" required name="subjectText"
-            id="subjectText" placeholder="Tell us what we can help you with!" rows="10" cols="100"></textarea>
+            id="subjectText" placeholder="Tell us what we can help you with!" rows="10" cols="100" required></textarea>
 
             <input form="contactForm" type="submit" name="" value="Submit">
           </form>
